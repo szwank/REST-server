@@ -8,3 +8,5 @@ app/__pycache__/**
 # Ignorowanie poszczegulnych plików
 chinook.**
 app.db
+Dockerfile
+requirements.txt
