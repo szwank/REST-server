@@ -1,0 +1,10 @@
+﻿# Ignorowanie zawartości folderu
+.idea/**
+__pycache__/**
+app/__pycache__/**
+
+
+
+# Ignorowanie poszczegulnych plików
+chinook.**
+app.db

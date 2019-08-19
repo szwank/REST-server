@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi, {{ current_user.username }}!</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+
+
+    <b>Filter posts by users</b>
+
+<form action="" method="post" name="a">
+    {{ form.drop_down_list.label }}
+    {{ form.drop_down_list() }}
+<button type="submit" formmethod="post">Filter</button>
+</form>
+{% endblock %}

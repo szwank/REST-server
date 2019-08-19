@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>What's your thoughts {{ current_user.username }}?</h1>
+    <form action="" method="POST" novalidate>
+
+        <p>
+            {{ form.body.label }}<br>
+            {{form.body(size=140)}}
+            {% for error in form.body.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+            {% endfor %}
+        </p>
+    </form>
+{% endblock %}
